@@ -45,6 +45,6 @@ show(img, 'Random circles')
 
 # OpenCV'nin .imwrite fonksiyonu ile görsellerimizi diske kaydedebiliriz.
 # Fonksiyona verdiğimiz dosya yolundaki dosya uzantısına göre OpenCV kodlamayı otomatik olarak yapmaktadır.
-cv2.imwrite('./random_circles.png', img)
+cv2.imwrite('./random_circles.jpg', img)
 
 print('Görseli diske de kaydettim, ./random_circles.png dosyasına bakabilirsiniz')
