@@ -49,7 +49,7 @@ model.compile(optimizer=keras.optimizers.RMSprop(lr=2e-4),
               metrics=['acc'])
 
 model.fit_generator(train_generator,
-                                        steps_per_epoch = len(train_generator) // args["batch_size"],
+                                        steps_per_epoch = train_generator.samples // args["batch_size"],
                     epochs=args["epochs"],
                     validation_data=validation_generator,
-                                        validation_steps = len(validation_generator) // args["batch_size"])
+                                        validation_steps = validation_generator.samples // args["batch_size"])
